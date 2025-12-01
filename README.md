@@ -148,22 +148,6 @@ Task-Manager-App/
 - Breakpoints optimized for all screen sizes
 - Touch-friendly interface on mobile devices
 
-## 📱 Screenshots
-
-### Desktop View
-![Desktop View](./docs/desktop-screenshot.png)
-
-### Mobile View  
-![Mobile View](./docs/mobile-screenshot.png)
-
-### Stats Dashboard
-![Stats Dashboard](./docs/stats-screenshot.png)
-
-> **💡 Tip:** 
-> - Add your screenshots to a `docs/` folder
-> - Use PNG or JPG format for screenshots
-> - Recommended sizes: Desktop (1200x800px), Mobile (400x700px)
-
 ## 🚧 Development
 
 ### Available Scripts
