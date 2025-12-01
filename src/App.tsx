@@ -39,6 +39,7 @@ function App() {
   // ---------------------------
   const completedCount = tasks.filter((t) => t.completed).length;
   const pendingCount = tasks.filter((t) => !t.completed).length;
+  const totalTasks = tasks.length;
 
   // ---------------------------
   // HANDLERS
@@ -83,12 +84,36 @@ function App() {
       {/* NAVBAR WITH THEME TOGGLE */}
       <Navbar theme={theme} setTheme={setTheme} />
 
-      <div className="container mt-4">
-        <div className="row g-3">
+      <div className="container mt-4 mb-5">
+        {/* Stats Card */}
+        <div className="stats-card">
+          <div className="row g-3">
+            <div className="col-12 col-sm-4">
+              <div className="stat-item">
+                <span className="stat-number">{totalTasks}</span>
+                <span className="stat-label">Total</span>
+              </div>
+            </div>
+            <div className="col-12 col-sm-4">
+              <div className="stat-item">
+                <span className="stat-number">{pendingCount}</span>
+                <span className="stat-label">Pending</span>
+              </div>
+            </div>
+            <div className="col-12 col-sm-4">
+              <div className="stat-item">
+                <span className="stat-number">{completedCount}</span>
+                <span className="stat-label">Done</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row g-4">
           {/* -------------------- */}
           {/* LEFT COLUMN */}
           {/* -------------------- */}
-          <div className="col-12 col-md-4">
+          <div className="col-12 col-lg-4">
             <AddTaskForm onAddTask={handleAddTask} />
             <TaskFilter filter={filter} onFilterChange={setFilter} />
           </div>
@@ -96,18 +121,22 @@ function App() {
           {/* -------------------- */}
           {/* RIGHT COLUMN */}
           {/* -------------------- */}
-          <div className="col-12 col-md-8">
-            <div className="alert alert-info d-flex justify-content-between">
-              <span>Completed: {completedCount}</span>
-              <span>Pending: {pendingCount}</span>
+          <div className="col-12 col-lg-8">
+            <div className="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-4 gap-2">
+              <h4 className="section-header mb-0">
+                <i className="bi bi-list-check me-2"></i>
+                Your Tasks
+              </h4>
+              {completedCount > 0 && (
+                <button
+                  className="btn btn-outline-danger btn-enhanced"
+                  onClick={handleClearCompleted}
+                >
+                  <i className="bi bi-trash me-2"></i>
+                  Clear Completed
+                </button>
+              )}
             </div>
-
-            <button
-              className="btn btn-outline-secondary mb-2"
-              onClick={handleClearCompleted}
-            >
-              Clear Completed Tasks
-            </button>
 
             <TaskList
               tasks={filteredTasks}
