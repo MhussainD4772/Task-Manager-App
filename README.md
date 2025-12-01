@@ -27,25 +27,6 @@
 - 🎨 **Modern UI** - Beautiful gradient design with smooth animations
 - ⚡ **Fast Performance** - Built with Vite for lightning-fast development
 
-## 🎬 Demo
-
-### Light Mode
-![Task Manager Light Mode](./docs/light-mode-demo.gif)
-
-### Dark Mode
-![Task Manager Dark Mode](./docs/dark-mode-demo.gif)
-
-### Mobile View
-![Task Manager Mobile](./docs/mobile-demo.gif)
-
-### Task Management Flow
-![Task Management](./docs/task-flow-demo.gif)
-
-> **📸 Creating GIFs:** 
-> - Use [Kap](https://getkap.co/) (Mac) or [LICEcap](https://www.cockos.com/licecap/) (Windows/Mac) to record your screen
-> - Save GIFs in a `docs/` folder in your repository
-> - Or use [GIPHY](https://giphy.com/) for animated GIFs and use their embed URLs
-
 ## 🚀 Installation
 
 ### Prerequisites
