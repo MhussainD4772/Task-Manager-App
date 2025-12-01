@@ -30,15 +30,21 @@
 ## 🎬 Demo
 
 ### Light Mode
-![Task Manager Light Mode](https://github.com/user-attachments/assets/light-mode-demo.gif)
+![Task Manager Light Mode](./docs/light-mode-demo.gif)
 
 ### Dark Mode
-![Task Manager Dark Mode](https://github.com/user-attachments/assets/dark-mode-demo.gif)
+![Task Manager Dark Mode](./docs/dark-mode-demo.gif)
 
 ### Mobile View
-![Task Manager Mobile](https://github.com/user-attachments/assets/mobile-demo.gif)
+![Task Manager Mobile](./docs/mobile-demo.gif)
 
-> **Note:** Replace the GIF URLs above with your own screenshots or recordings. You can use tools like [Kap](https://getkap.co/) or [LICEcap](https://www.cockos.com/licecap/) to create GIFs.
+### Task Management Flow
+![Task Management](./docs/task-flow-demo.gif)
+
+> **📸 Creating GIFs:** 
+> - Use [Kap](https://getkap.co/) (Mac) or [LICEcap](https://www.cockos.com/licecap/) (Windows/Mac) to record your screen
+> - Save GIFs in a `docs/` folder in your repository
+> - Or use [GIPHY](https://giphy.com/) for animated GIFs and use their embed URLs
 
 ## 🚀 Installation
 
@@ -145,12 +151,18 @@ Task-Manager-App/
 ## 📱 Screenshots
 
 ### Desktop View
-![Desktop View](https://via.placeholder.com/800x500/667eea/ffffff?text=Desktop+View)
+![Desktop View](./docs/desktop-screenshot.png)
 
-### Mobile View
-![Mobile View](https://via.placeholder.com/400x700/764ba2/ffffff?text=Mobile+View)
+### Mobile View  
+![Mobile View](./docs/mobile-screenshot.png)
 
-> **Tip:** Replace placeholder images with actual screenshots of your app
+### Stats Dashboard
+![Stats Dashboard](./docs/stats-screenshot.png)
+
+> **💡 Tip:** 
+> - Add your screenshots to a `docs/` folder
+> - Use PNG or JPG format for screenshots
+> - Recommended sizes: Desktop (1200x800px), Mobile (400x700px)
 
 ## 🚧 Development
 
